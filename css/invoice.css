@@ -1,0 +1,128 @@
+/**
+ * Invoice Style Sheet
+ *
+ * Contains styling specific to the view invoice page.
+ *
+ * @project   WHMCS
+ * @version   1.0
+ * @author    WHMCS Limited <development@whmcs.com>
+ * @copyleft Copyleft (c) WHMCS Limited 2005-2015
+ * @license   http://www.whmcs.com/license/
+ * @link      http://www.whmcs.com/
+ */
+ @font-face {
+   font-family: "IRANSans";
+   src: url('../fonts/IRANSansWeb.woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+body {
+    background-color: #efefef;
+    text-align: justify;
+    direction:rtl;
+    font-family:"IRANSans",Tahoma;
+}
+
+/* Container Responsive Behaviour */
+
+.invoice-container {
+    margin: 15px auto;
+    padding: 70px;
+    max-width: 850px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+@media (max-width: 895px) {
+    .invoice-container {
+        margin: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .invoice-container {
+        padding: 45px 45px 70px 45px;
+    }
+}
+
+/* Invoice Status Formatting */
+
+.invoice-container .invoice-status {
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Invoice Status Colors */
+
+.draft {
+    color: #888;
+}
+.unpaid {
+    color: #cc0000;
+}
+.paid {
+    color: #779500;
+}
+.refunded {
+    color: #224488;
+}
+.cancelled {
+    color: #888;
+}
+.collections {
+    color: #ffcc00;
+}
+
+/* Payment Button Formatting */
+
+.invoice-container .payment-btn-container {
+    margin-top: 5px;
+    text-align: center;
+}
+.invoice-container .payment-btn-container table {
+    margin: 0 auto;
+}
+
+/* Text Formatting */
+
+.invoice-container .small-text {
+    font-size: 14px;
+    text-align: -webkit-auto;
+    text-shadow: 0 0 black;
+    line-height: 2;
+}
+
+/* Invoice Items Table Formatting */
+
+.invoice-container td.total-row {
+    background-color: #f8f8f8;
+}
+.invoice-container td.no-line {
+    border: 0;
+}
+.container-fluid.invoice-container .row .col-sm-7 p img {
+    background-color: black;
+    border-radius: 10px;
+}
+body > div > div:nth-child(1) > div.col-sm-5.text-center > div.small-text {
+    text-align: center;
+    margin: 8px 0;
+}
+body > div > div:nth-child(1) > div.col-sm-5.text-center {
+    margin-top: -15px;
+}
+body > div > div:nth-child(3) > div:nth-child(2) > address {
+    direction: ltr;
+    padding-left: 21px;
+}
+.container-fluid.invoice-container strong {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 3;
+}

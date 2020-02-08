@@ -1,0 +1,7 @@
+# ahoura Theme for WHMCS Configuration File
+
+name: "ahoura Theme for WHMCS"
+description: "ahoura - Html5 WHMCS Theme"
+author: "Mr Mirabutalebi"
+properties:
+  serverSidePagination: false # Defines client side will handle pagination
